@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rutina con IA</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <main>
+    <h1>Generador de Rutinas Fitness con IA</h1>
+
+    <form id="fitness-form">
+      <label>Nombre:
+        <input type="text" name="nombre" required />
+      </label>
+
+      <label>Edad:
+        <input type="number" name="edad" required />
+      </label>
+
+      <label>Peso (kg):
+        <input type="number" name="peso" required />
+      </label>
+
+      <label>Altura (cm):
+        <input type="number" name="altura" required />
+      </label>
+
+      <label>Nivel de actividad:
+        <select name="actividad" required>
+          <option value="sedentario">Sedentario</option>
+          <option value="moderado">Moderado</option>
+          <option value="activo">Activo</option>
+        </select>
+      </label>
+
+      <label>Objetivo:
+        <select name="objetivo" required>
+          <option value="bajar grasa">Bajar grasa</option>
+          <option value="ganar músculo">Ganar músculo</option>
+          <option value="mantener">Mantener</option>
+        </select>
+      </label>
+
+      <button type="submit">Generar rutina</button>
+    </form>
+
+    
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
